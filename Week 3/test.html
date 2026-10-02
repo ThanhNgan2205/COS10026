@@ -1,15 +1,89 @@
-Result Size: 616 x 772
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWA Help Desk Appointment</title>
+</head>
 <body>
-<h2>Textarea</h2>
-<p>The textarea element defines a multi-line input field.</p>
-<form action="/action_page.php">
-  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-  <br><br>
-  <input type="submit">
-</form>
-</body>
-</html>
+    <!-- Swinburne Logo with hyperlink-->
+    <a href="https://www.swinburne.edu.au/" target="_blank">
+        <img src="./lab03/logo.png" alt="Swinburne Logo">
+    </a>
+    <p>
 
+    <h1>CWA Help Desk Appointment</h1>
+    <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+    <p>Check Blackboard for when CWA tutors will be there</p>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend><strong>Student details</strong></legend>
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required pattern="\d{7,10}"><br>
+            <br>
+            <label for="given-name">Given Name:</label>
+            <input type="text" id="given-name" name="given-name" size="15" required pattern="^[A-Za-z]+">
+            <label for="family-name">Family Name:</label>
+            <input type="text" id="family-name" name="family-name" size="15" required pattern="[A-Za-z]+"><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Your unit</strong></legend>
+            <input type="radio" id='unit1' name="unit" value="COS10011" required>
+            <label for="unit1">COS10011</label>
+            
+            <input type="radio" id='unit2' name="unit" value="COS60004">
+            <label for="unit2">COS60004</label>
+            
+            <input type="radio" id='unit3' name="unit" value="COS60007">
+            <label for="unit3">COS60007</label>
+
+            <p><label for="tutor">Your Tutor: </label>
+                <select name="tutor" id="tutor">
+                    <option value="default">Please select</option>
+                    <option value="tutor1">Tutor 1</option>
+                    <option value="tutor2">Tutor 2</option>
+                    <option value="tutor3">Tutor 3</option>
+                </select>
+        </fieldset>   
+        
+        <br>
+
+        <fieldset>
+            <legend><strong>Issue</strong></legend>
+            <label for="issue1">HTML</label>
+            <input type="checkbox" id="issue1" name="issue" value="html" checked>
+            &nbsp;
+            <label for="issue2">CSS</label>
+            <input type="checkbox" id="issue2" name="issue" value="css">
+            &nbsp;
+            <label for="issue3">JavaScript</label>
+            <input type="checkbox" id="issue3" name="issue" value="javascript">
+            &nbsp;
+            <label for="issue4">PHP</label>
+            <input type="checkbox" id="issue4" name="issue" value="php">
+            <label for="issue5">MySQL</label>
+            <input type="checkbox" id="issue5" name="issue" value="mysql">
+
+            <p><label for="description">Description of Issue</label></p>
+                <textarea name="issue_description" id="description" rows="10" cols="40" placeholder="Write description of your problem here..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Preferred Date/Time</strong></legend>
+            <label for="date">Date:</label>
+            <input type="text" id="date" name="date" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy"><br>
+            <label for="time">Time:</label>
+            <input type="text" id="time" name="time" pattern="\d{2}:\d{2}" placeholder="00:00">
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Book">
+        <input type= "reset" value="Reset Form"/>
+    </form>
+</html>
