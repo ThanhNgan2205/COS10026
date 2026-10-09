@@ -1,7 +1,93 @@
 /*
-filename: lab04.css
-author: Tong My Thanh Ngan
-created: 03/10/2026
-last modified: 2023-10-01
-description: CSS file for Lab 04
+Filename: lab04.css
+Author: Tong My Thanh Ngan
+Created: 03/10/2026
+Last modified: 07/10/2026
+Description: CSS file for Lab 04
 */
+
+/* ---------- Headings ---------- */
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: #00ced1;
+    font-size: 1.3em;
+}
+
+h3 {
+    color: #333333;
+    font-size: 1em;
+}
+
+/* Header + Nav */
+header hr {
+    border: none;
+    border-top: 3px solid #647c94; 
+}
+
+nav a {
+    text-decoration: none;
+    padding:0.2em 0.6em;
+    border: 1px solid black;
+}      
+
+nav a:hover {
+    background-color: white;
+}
+
+/* ---------- Article ---------- */
+/* first h3 on the article should be in red */
+article h3:first-of-type{
+    color: red;
+}
+
+aside {
+    font-style: italic;
+}
+
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/* ---------- Lists ---------- */
+ol ul {
+    list-style-type: square;
+}
+
+/* ---------- Tables ---------- */
+table {
+    border: 1px solid black;
+    border-spacing: 2.5px;
+}
+
+caption {
+    font-size: 1em;
+    padding-bottom: 0.3em;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+tbody th {
+    text-align: right;
+}
+
+/* ---------- Links and images ---------- */
+a {
+    color: black;
+}
+
+#images {
+    text-align : center;  /* careful: center has US spelling */
+}
+/* ---------- Footer ---------- */
+footer {
+    font-size: 0.9em;
+    text-align: right;
+}
