@@ -96,8 +96,9 @@ a {
 }
 
 #images {
-    text-align : center;  /* careful: center has US spelling */
+    text-align : center;
 }
+
 /* ---------- Footer ---------- */
 footer {
     font-size: 0.9em;
