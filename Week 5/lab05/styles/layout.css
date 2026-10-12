@@ -95,6 +95,7 @@ footer p {
     width:33%
 }
 
+/* 2 */
 footer p:first-child {
     float:left; 
 }
