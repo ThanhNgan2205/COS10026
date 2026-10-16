@@ -11,9 +11,9 @@ aside:hover {
     display:block;
 }
 
-/* Nav */
+/* Nav + display on single one line */
 .menu {
-    display: inline-block;
+    display: inline-block; 
 }
 
 /* ---------- Step 3. box model ---------- */
