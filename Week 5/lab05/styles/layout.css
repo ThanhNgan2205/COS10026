@@ -24,7 +24,7 @@ aside {
     padding: 1em;
     width: 30%;
     background: url(./images/fade.jpg) repeat-x top left;
-    float:right;
+    float: right;
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
@@ -60,8 +60,8 @@ table {
 
 /* 7. The images section sits under the tables section */
 #hyperlinks {
-    clear:both; 
-    float:left; 
+    clear: both; 
+    float: left; 
 }
 
 /* 9. Float the images section to the right, add a border property for the figure element */
@@ -85,13 +85,13 @@ ol, ul, dl {
 
 /* 11. Set a minimum width on the article element  */
 article {
-    min-width:30em;
+    min-width: 30em;
 }
 
 /* ---------- Step 5. More Pseudo Class Selectors and a Pseudo Element Selector ---------- */
 /* 1 */
 footer p {
-    display:inline-block;  
+    display: inline-block;  
     width:33%
 }
 
@@ -105,8 +105,8 @@ footer p:nth-child(2) {
 }
 
 footer p:last-child {
-    float:right; 
-    text-align:right; 
+    float: right; 
+    text-align: right; 
 }
 
 
